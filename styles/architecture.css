@@ -26,6 +26,9 @@
 .text-light-gray {
     color: rgb(114, 114, 114);
 }
+.text-orange {
+    color: rgb(255, 144, 14);
+}
 
 /* Orange */
 .bg-orange {
@@ -36,6 +39,29 @@
 .bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
+
+/* Button Related Styles*/
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+
+}
+.common-title{
+    Font-weight:700;
+    Font-size:3rem;
+}
+.common-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+}
+
 
 /* Header styles */
 
@@ -80,30 +106,69 @@
     font-weight: 700;
 }
 
-.banner-description {
-    font-size: 1rem;
-    font-weight: 400;
-}
+
+
 .banner-image {
     width: 100%;
 }
 
-/* Button Related Styles*/
-
-.btn-primary {
-    width: 180px;
-    height: 64px;
-    border: none;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
-
+main {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-@media screen  and (max-width: 576px) {
-    .navbar,.nav-links{
+main>section {
+    margin-top: 130px;
+}
+
+.teams {
+    align-items: center;
+}
+
+.teams-features {
+    margin-left: 100px;
+    max-width: 530px;
+}
+
+.teams-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#Quick {
+    Font-weight:500;
+    Font-size:3rem;
+    color: rgb(114, 114, 114);
+}
+
+
+/* For Small Devices */
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .nav-links,.teams {
         flex-direction: column;
     }
-    
+
+    .teams-image{
+        grid-template-columns: 1fr;
+    }
+
+    .teams-features {
+        margin-left: 5px;
+    }
+}
+
+/* For Medium Devices */
+
+@media screen and (min-width: 576px) and (max-width: 990px) {
+
+    .teams {
+        flex-direction: column;
+    }
+
+    .teams-features {
+        margin: 50px auto;
+    }
 }
