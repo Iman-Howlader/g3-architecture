@@ -147,19 +147,44 @@ main>section {
 
 /* Features Related Styles */
 
-.features{
+.features {
     gap: 100px;
 }
-#feature-love{
+
+#feature-love {
     border-left: 10px solid rgb(255, 144, 14);
     padding: 0 20px;
 }
 
-.feature-item{
+.feature-item {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
+}
+
+.btn-secondary {
+    width: 22rem;
+    height: 14rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+#experience-badge {
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#experience{
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 
@@ -214,7 +239,8 @@ main>section {
 
     .navbar,
     .nav-links,
-    .teams {
+    .teams ,
+    .features{
         flex-direction: column;
     }
 
@@ -228,14 +254,22 @@ main>section {
         margin-left: 5px;
     }
 
-    .fact-container
-    {
+    .fact-container {
         justify-items: center;
         gap: 30px;
     }
+
     .sponsors-container {
         justify-items: center;
         gap: 50px;
+    }
+
+    .features-image img{
+        width: 100%;
+    }
+
+    #experience-badge{
+        margin: 5px 5px;
     }
 }
 
@@ -251,8 +285,9 @@ main>section {
         margin: 50px auto;
     }
 
-    .sponsors-container,.fact-container{
-        grid-template-columns: repeat(3,1fr);
+    .sponsors-container,
+    .fact-container {
+        grid-template-columns: repeat(3, 1fr);
         gap: 50px;
         justify-items: center;
     }
