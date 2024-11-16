@@ -145,6 +145,24 @@ main>section {
     color: rgb(114, 114, 114);
 }
 
+/* Features Related Styles */
+
+.features{
+    gap: 100px;
+}
+#feature-love{
+    border-left: 10px solid rgb(255, 144, 14);
+    padding: 0 20px;
+}
+
+.feature-item{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+
 /* Facts Related Styles */
 .fact-container {
     display: grid;
